@@ -1,52 +1,7 @@
-# ESP32-AI-IoT-Smart-Monitoring-System
-An ESP32-based intelligent monitoring node that detects object proximity, analyzes motion patterns, and monitors environmental conditions while providing real-time IoT dashboard visualization.
+# AI-Enhanced IoT Smart Proximity & Environmental Monitoring System
 
-Features
+This project presents an AI-enhanced IoT-based smart monitoring node built using the ESP32 microcontroller. The system integrates an HC-SR04 ultrasonic sensor for proximity detection and a DHT11 sensor for environmental monitoring, allowing it to continuously measure object distance, temperature, and humidity in real time. The ESP32 processes these sensor inputs to detect motion patterns such as approaching or receding objects, estimate object speed, and predict the estimated time of arrival (ETA) before an object reaches the sensor. Based on these values, the system classifies the environment into different safety zones and performs basic AI-style anomaly detection to identify unusual movement patterns or potential collision risks.
 
-Ultrasonic distance sensing (HC-SR04)
+The device provides both local and remote monitoring interfaces. A 128×64 OLED display connected to the ESP32 acts as a real-time local dashboard showing distance, motion state, speed, ETA, temperature, humidity, and system alerts. Additionally, LED indicators provide quick visual feedback for proximity alerts and system status. Using the ESP32’s WiFi capabilities, the system also hosts a live IoT web dashboard that can be accessed from any device on the same network. This dashboard displays sensor readings, proximity status, environmental data, system uptime, WiFi signal strength, and allows basic remote control of the device.
 
-Motion detection (approaching / receding)
-
-Speed and ETA prediction
-
-Temperature & humidity monitoring (DHT11)
-
-OLED local monitoring display
-
-LED proximity alerts
-
-WiFi IoT dashboard
-
-Radar-style proximity visualization
-
-Sensor history tracking
-
-Edge AI anomaly detection
-
-Hardware Used
-
-ESP32
-
-HC-SR04 Ultrasonic Sensor
-
-DHT11 Temperature & Humidity Sensor
-
-128×64 OLED Display
-
-LEDs
-
-Breadboard & jumper wires
-
-System Architecture
-
-Sensors → ESP32 Processing → Motion Analysis → OLED + LED Alerts → IoT Web Dashboard
-
-Applications
-
-Industrial safety monitoring
-
-Robot obstacle detection
-
-Smart environment monitoring
-
-Security monitoring nodes
+The project demonstrates the integration of embedded systems, sensor fusion, IoT networking, motion analysis, and intelligent decision logic in a compact monitoring platform. Such a system can be applied in industrial safety monitoring, robot obstacle detection, smart environment monitoring, and security monitoring systems where real-time sensing and remote monitoring are required.
