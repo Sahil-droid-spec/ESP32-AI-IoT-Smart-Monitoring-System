@@ -1,0 +1,15 @@
+The ESP32 is connected to the sensors and display as follows:
+
+ESP32 → Device
+
+GPIO5  → HC-SR04 TRIG  
+GPIO4  → HC-SR04 ECHO  
+
+GPIO27 → DHT11 DATA  
+
+GPIO26 → OLED SDA  
+GPIO25 → OLED SCL  
+
+GPIO23 → Close Warning LED  
+GPIO19 → Safe Distance LED  
+GPIO2  → Web Status LED
