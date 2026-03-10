@@ -5,8 +5,8 @@
 #include <Adafruit_SSD1306.h>
 #include <DHT.h>
 
-const char* ssid     = "narzo 50A";
-const char* password = "Gokussb3";
+const char* ssid     = "yourwifiname";
+const char* password = "yourwifipassword";
 
 #define TRIG         5
 #define ECHO         4
